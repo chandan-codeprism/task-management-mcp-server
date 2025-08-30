@@ -1,4 +1,7 @@
 package chandan.rai.taskmanagementmcpserver.repository;
 
-public interface TaskRepository {
+import chandan.rai.taskmanagementmcpserver.entity.Task;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface TaskRepository extends JpaRepository<Task, Long> {
 }
